@@ -6,7 +6,7 @@ Este projeto é um script em Python que automatiza o cadastro de produtos em um 
 
 - Python 3
 - [PyAutoGUI](https://pyautogui.readthedocs.io/en/latest/)
-- [pandas](https://pandas.pydata.org/)
+- [Pandas](https://pandas.pydata.org/)
 - Arquivo CSV para base de dados
 
 ## Funcionalidades
@@ -25,3 +25,12 @@ Este projeto é um script em Python que automatiza o cadastro de produtos em um 
   ```bash
   pip install pyautogui pandas
 ****
+
+## Script de apoio: posicao_mouse.py
+
+Este projeto também inclui o script `posicao_mouse.py`, usado para descobrir as coordenadas exatas do mouse na tela antes de configurar os cliques do PyAutoGUI.
+
+O funcionamento é simples:
+- Ao executar `posicao_mouse.py`, o script espera 5 segundos.
+- Nesse tempo, você posiciona o cursor do mouse no lugar desejado na tela.
+- Após os 5 segundos, ele imprime no terminal a posição atual do mouse (`x` e `y`), que você pode copiar e usar nos comandos `pyautogui.click(x=..., y=...)` do arquivo `automacao.py`.
